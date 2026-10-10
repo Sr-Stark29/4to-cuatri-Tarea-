@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Store | Producto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <a href="tienda.html" class="logo">NOVA<span>STORE</span></a>
+        <a href="login.html" class="logout">Cerrar sesión</a>
+    </header>
+
+    <main class="product-container">
+        <section class="product-image">
+            <img src="img/honda s2000.jpg" alt="Honda S2000 HW LEGENDS">
+        </section>
+
+        <section class="product-info">
+            <p class="category">COLECCION</p>
+            <h1>Honda S2000 HW LEGENDS</h1>
+            <p class="description">
+                Una pieza de coleccion en perfectas condiciones, 
+                justo para sobresalir de cualquier conjunto de buenas piezas.
+            </p>
+
+            <div class="price">$2,499 MXN</div>
+
+            <h2>Características principales</h2>
+            <ul class="features">
+                <li>Cuerpo de metal</li>
+                <li>Color Morado SPECTRAFAME</li>
+                <li>Llantas de goma RR10 SP</li>
+                <li>Escala 1:64</li>
+            </ul>
+
+            <button class="btn primary" id="buyButton">Agregar al carrito</button>
+            <p id="cartMessage" class="cart-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Nova Store — AJLB </p>
+    </footer>
+
+    <script>
+        document.getElementById("buyButton").addEventListener("click", function() {
+            document.getElementById("cartMessage").textContent =
+                "✓ Producto agregado al carrito.";
+        });
+    </script>
+</body>
+</html>
